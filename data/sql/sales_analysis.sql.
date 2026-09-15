@@ -1,1 +1,19 @@
+-- Revenue and profit by region
+SELECT
+    region,
+    SUM(revenue) AS total_revenue,
+    SUM(revenue - cost) AS total_profit,
+    ROUND(SUM(revenue - cost) * 100.0 / NULLIF(SUM(revenue), 0), 2) AS profit_margin_pct
+FROM sales
+GROUP BY region
+ORDER BY total_revenue DESC;
+
+-- Top products by revenue
+SELECT
+    product,
+    SUM(revenue) AS total_revenue,
+    SUM(units) AS units_sold
+FROM sales
+GROUP BY product
+ORDER BY total_revenue DESC;
 
