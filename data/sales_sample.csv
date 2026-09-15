@@ -1,0 +1,6 @@
+order_date,region,product,channel,units,revenue,cost
+2026-01-05,North,Laptop,Online,3,3600,2700
+2026-01-12,South,Monitor,Retail,5,1250,850
+2026-02-03,North,Keyboard,Online,10,700,420
+2026-02-18,West,Laptop,Retail,2,2400,1800
+2026-03-04,East,Mouse,Online,20,600,300
